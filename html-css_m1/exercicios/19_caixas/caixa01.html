@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
-        h1 {
+        h1 { /* box-level */
             background-color: lightgray;
             height: 300px;
             width: 300px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: darkslategray;
 
-            padding-top: 10px;
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;*/
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 10px; 
+            1 medida = Se caso todos os quatro valores forem iguais, pode se usar o valor apens uma vez, que sera usado nos 4 lados
+            2 medidas = Nesse caso o primeiro valor representa a parte do top e do bottom, e o segundo valor right e left*/
+            padding: 10px;
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            Se trocar as medidas das laterais por 'auto' o elemento sera posicionado no meio*/
+            margin: 20px 20px 40px 20px;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+            outline: 5px dashed salmon;
         }
 
-        a {
+        a { /* inline-level */
             border-width: 10px;
             border-style: solid;
             border-color: red;
