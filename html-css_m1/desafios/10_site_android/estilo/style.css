@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header {
+    text-align: center;
+}
+
+header > nav {
+    text-align: left;
+}
+
+body {
+    background-color: #c5ebd6;
+}
