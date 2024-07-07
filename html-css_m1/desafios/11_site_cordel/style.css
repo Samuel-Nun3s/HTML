@@ -13,9 +13,9 @@
 }
 
 :root {
+    --fonte_padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte_destaque: 'Destaque', 'cursive';
-    --fonte_padrao: Verdana, Tahoma, sans-serif;
-    --fonte_cordel: 'cordel';
+    --fonte_cordel: 'cordel', 'cursive';
 }
 
 * {
@@ -23,29 +23,38 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
-    height: 220px;
     background-color: black;
     color: white;
     text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.623);
 }
 
 h1 {
     font-family: var(--fonte_destaque);
-    font-size: 10vw;
+    font-size: 8vw;
     font-variant: small-caps;
     margin: auto;
+    padding-top: 50px;
 }
 
 h1:hover {
     text-decoration: underline;
 }
 
+header > p {
+    padding-bottom: 50px;
+}
+
 a { 
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 a:hover {
@@ -58,17 +67,11 @@ p.links {
     margin: auto;
 }
 
-#container {
-    position: relative;
-}
-
-#conteudo {
-    position: relative;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 2.7vw;
 }
 
 section.padrao {
@@ -76,25 +79,35 @@ section.padrao {
 }
 
 p.cordel {
-    padding: 45px;
     line-height: 2em;
     font-family: var(--fonte_cordel);
 }
 
-section.imagem1 {
-    background-image: url('imagens/background001.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color: white;
+p.duplo {
+    padding-bottom: 10vh;
 }
 
-section.imagem2 {
-    background-image: url('imagens/background002.jpg');
+section.imagem {
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+}
+
+section#imagem1 {
+    background-image: url('imagens/background001.jpg');
+}
+
+section#imagem2 {
+    background-image: url('imagens/background002.jpg');
+}
+
+section.imagem> p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 15px;
+    text-shadow: 1px 2px 0px black;
 }
 
 footer {
