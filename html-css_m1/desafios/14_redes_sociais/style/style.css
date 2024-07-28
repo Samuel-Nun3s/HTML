@@ -50,9 +50,16 @@ section#redes-sociais {
 }
 
 img.social {
-    border-radius: 50%;
     height: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.603);
     margin: 8px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
 }
 
+img.social:hover {
+    border: 1px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform 0.3s, border 0.3s;
+}
