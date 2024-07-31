@@ -10,9 +10,14 @@
         }
     </style>
 </head>
+    <!--
+        GET = Quando seus dados não forem sensiveis, a url vira compartilhavel, so pode ser enviado ate 3mil bytes, nao suporta fotos ou arquivos.
+        
+        POST = Quando os dados forem sensiveis, suporta fotos ou arquivos, se forem maiores de 3mil bytes.
+    -->
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
         <label for="isobrenome">Sobrenome:</label> 
