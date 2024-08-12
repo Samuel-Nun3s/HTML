@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores:
+    #A200F5 mais claro
+    #9222CA 
+    #623B75 mais escuro
+*/
+
+:root {
+    --cor01: #A200F5;
+    --cor02: #9222CA;
+    --cor03: #722399;
+    --cor04: #623B75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--cor03) 70%, rgb(19, 18, 18));
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    width: 250px;
+    height: 515px;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+}
+
+div#imagem {
+    display: block;
+    background: var(--cor04) url(../images/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: left top;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#formulario {
+    text-align: center;
+    font-size: .8em;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div#formulario > h1 {
+    padding: 10px;
+}
+
+div.campo {
+    background-color: var(--cor04);
+    border: 2px solid var(--cor04);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > span {
+    display: inline-block;
+    color: white;
+    font-size: 2.5em;
+    padding-top: 4px;
+}
+
+.texto {
+    background-color: rgb(192, 192, 192);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 70%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+#entrar {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--cor03);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .6s;
+}
+
+#entrar:hover {
+    background-color: var(--cor02);
+}
+
+#esqueci {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 16px;
+    background-color: white;
+    color: var(--cor03);
+    margin-top: 5px;
+    margin-left: -1px;
+    padding: 8.4px 0px;
+    border: 2px solid var(--cor03);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .6s;
+}
+
+#esqueci:hover {
+    background-color: var(--cor03);
+    color: white;
+}
+
+label {
+    display: none;
+}
