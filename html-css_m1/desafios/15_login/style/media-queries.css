@@ -9,7 +9,7 @@ Desktop: 993px até 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
     section#login {
         display: flex;
         width: 80vw;
@@ -19,8 +19,37 @@ Grandes Telas: acima de 1200px
 
     div#imagem {
         float: left;
-        width: 60%;
+        width: 40%;
         height: 100%;
         border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 950px;
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    div#formulario {
+        float: left;
+        width: 50%;
+        padding-top: 16px;
+    }
+
+    div#formulario > h1 {
+        font-size: 2.7em;
+    }
+
+    div#formulario > p {
+        font-size: 1.4em;
     }
 }
